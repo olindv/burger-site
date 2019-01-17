@@ -1,0 +1,130 @@
+.menu {
+    background: url(../img/five-bg.jpg) center center no-repeat;
+    background-size: cover;
+    position: relative;
+}
+
+
+.menu__accordeon {
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    display: flex;
+    // @include phones {
+    //     left: 0;
+    // }
+}
+
+
+.menu__list {
+    // min-width: 6vw;
+    font-family: "Gagalin";
+    font-size: rem(40px);
+    line-height: rem(64px);
+    height: 100%;
+    display: flex;
+}
+
+
+.menu__content {
+    font-family: "Ubuntu";
+    font-size: rem(14px);
+    line-height: rem(24px);
+    font-weight: lighter;
+    color: #fff;
+    background-color: #2f3234;
+    opacity: 0.929;
+    height: 100%;
+    max-width: 0;
+    overflow: hidden;
+}
+
+.menu__list--active {
+    .menu__link {
+        color: $yellow;
+    }
+    .menu__content{
+        max-width: rem(541px);
+        overflow: visible;
+        @include tablets {
+            max-width: 74vw;
+        }
+        @include phones {
+            max-width: 57vw;
+        }
+    }
+}
+
+.menu__box {
+    width: 7vw; 
+    position: relative;
+    height: 100%;
+    display: flex;
+    justify-content: flex-end;
+    align-items: flex-end;
+}
+
+
+.menu__link {
+    text-decoration: none;
+    width: 5vw;
+    color: #fff;
+    display: block;
+    height: 100%;
+    position: relative;
+    @include tablets {
+        width: 9vw;
+    }
+    @include phones {
+        width: 15vw;
+    }
+}
+
+.menu__elem {
+    transform: translateX(rem(-30px)) rotate(-90deg);
+    transform-origin: 0 0;
+    white-space: nowrap;
+    position: absolute;
+    left: 50%;
+    right: 0;
+    bottom: 0;
+}
+
+
+
+.menu__text {
+    width: rem(485px);
+    padding: rem(55px) rem(33px) 0;
+    @include tablets {
+        padding: rem(60px) rem(70px) 0;
+        width: initial;
+    @include phones {
+        padding: rem(10px) rem(15px) 0;
+    }
+    }
+    &:nth-child(2) {
+        padding-top: 0;
+    }
+}
+
+.menu__list:first-child{
+    .menu__link {
+        background: url(../img/accord1.jpg) center center no-repeat;
+        background-size: cover;
+    }
+}
+.menu__list:nth-child(2){
+    .menu__link {
+        background: url(../img/accord2.jpg) center center no-repeat;
+        background-size: cover;
+    }
+}
+
+.menu__list:last-child{
+    .menu__link {
+        background: url(../img/accord3.jpg) center center no-repeat;
+        background-size: cover;
+    }
+}
+

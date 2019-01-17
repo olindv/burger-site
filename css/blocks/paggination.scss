@@ -1,0 +1,49 @@
+.paggination {
+    height: 30%;
+    position: fixed;
+    right: 5%;
+    top: 10%;
+    @include tablets {
+        display: none;
+    }
+}
+
+.paggination__box {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+.paggination__list {
+    height: 24%;
+    position: relative;
+    cursor: pointer;
+}
+// .paggination__elem {
+//     position: relative;
+// }
+
+.paggination__list::before {
+    content: "";
+    display: block;
+    position: absolute;
+    width: rem(6px);
+    height: rem(6px);
+    border-radius: 50%;
+    background-color: #fff;
+    top: rem(5px);
+    left: rem(5px);
+}
+
+.paggination__list--active::after {
+    content: "";
+    display: block;
+    position: absolute;
+    width: rem(14px);
+    height: rem(14px);
+    border-radius: 50%;
+    border-style: solid;
+    border-width: rem(1px);
+    border-color: #fff;
+    // top: 0;
+}

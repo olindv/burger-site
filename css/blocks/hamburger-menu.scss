@@ -1,0 +1,33 @@
+.header__btn-menu {
+    display: flex;
+    flex-direction: column;
+    width: rem(24px);
+    height: rem(22px);
+    justify-content: space-between;
+    display: none;
+    @include tablets {
+        display: flex;
+        margin-left: rem(30px);
+    }
+    span {
+        width: 100%;
+        height: rem(3px);
+        background: #fff;
+        border-radius: rem(3px);
+    }
+}
+
+.header__btn-def {
+    &:nth-child(1) {
+        transform: rotate(45deg) translate(50%, 50%);
+    }
+    &:nth-child(2) {
+        display: none;
+    }
+    &:nth-child(3) {
+        transform: rotate(-45deg) translate(50%, -50%);
+    }
+}
+
+
+  

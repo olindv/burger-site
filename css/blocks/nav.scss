@@ -1,0 +1,43 @@
+.nav {
+    margin-right: rem(15px);
+    @include tablets {
+        display: none;
+    }
+}
+
+.nav__list {
+    display: flex;
+    justify-content: space-between;
+    color: #fff;
+}
+
+.nav__link {
+    text-decoration: none;
+    color: #fff;
+    font-family: "Ubuntu";
+    font-size: rem(13px);
+    font-weight: medium;
+    line-height: rem(30px);
+    text-transform: uppercase;
+    display: flex;
+    align-items: center;
+        
+    &:hover{
+        color: $orange;
+        transition: 0.5s;
+    }
+
+    &:after {
+        content: "";
+        width: rem(4px);
+        height: rem(4px);
+        border-radius: 50%;
+        display: block;
+        background: #fff;
+        margin: rem(10px);
+    }
+}
+
+.nav__elem:last-child .nav__link:after {
+    display: none;
+}

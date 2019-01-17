@@ -1,0 +1,34 @@
+.title {
+    font-family: "Gagalin";
+    font-size: rem(72px);
+    line-height: rem(85px);
+    color: $yellow;
+    text-transform: uppercase;
+    margin-bottom: rem(20px);
+    text-align: center;
+        @include phones {
+        font-size: rem(65px);
+        line-height: rem(60px);
+    }
+
+    &--color-black {
+        color: $black;
+    }
+    &--color-white {
+        color: #fff;
+        padding-top: rem(111px);
+        margin-left: rem(93px);
+        text-align: inherit;
+        @include phones {
+            padding-top: 0;
+            margin-left: rem(60px);
+            padding-top: rem(60px);
+            text-align: inherit;
+        }
+    }
+    &--order {
+        @include tablets {
+            margin-bottom: 0;
+        }
+    }
+}

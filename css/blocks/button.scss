@@ -1,0 +1,47 @@
+.button, .button__adaptive {
+    @include button;
+}
+
+
+.arrow {
+    border: none;
+    position: absolute;
+    top: 96%;
+    left: 50%;
+    width: rem(30px);
+    height: rem(15px);
+}
+
+.slider__col-right,
+.slider__col-left {
+    display: flex;
+    align-items: center;
+    .arrow-link{
+        display: block;
+        .arrow {
+            position: inherit;
+        }
+    }
+}
+
+.slider__col-left {
+    .arrow-link {
+        transform: rotate(90deg);
+        margin-left: rem(47px);
+        @include phones {
+            padding-left: 5%;
+            margin: 0;
+        }
+    }
+}
+
+.slider__col-right {
+    .arrow-link {
+        transform: rotate(-90deg);
+        margin-right: rem(47px);
+        @include phones {
+            padding-right: 5%;
+            margin: 0;
+        }
+    }
+}

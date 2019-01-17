@@ -1,0 +1,110 @@
+.comments__block {
+    display: flex;
+    flex-wrap: wrap;
+    height: 100%;
+}
+
+.comments__review {
+width: 25%;
+height: 50%;
+background: center center no-repeat;
+background-size: cover;
+filter: grayscale(100%);
+position: relative;
+@include tablets {
+    width: 50%;
+    height: 25%;
+}
+}
+
+.comments__style {
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    z-index: 2;
+    background-color: rgba(27, 27, 27, 0.6);
+    opacity: 0;
+    display: flex;
+    
+    &:hover{
+        opacity: 1;
+        transition: 0.6s;
+    }
+    
+}
+
+.comments__cont {
+    max-width: 75%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin: 0 auto;
+    @include tablets {
+        max-width: initial;
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        margin: 0;
+    }
+}
+
+.comments__title {
+    font-family: "Gagalin";
+    font-size: rem(14px);
+    line-height: rem(28px);
+    color: #fff;
+    @include phones {
+        font-size: rem(24px);
+        display: inline-block;
+        width: 60%;
+        text-align: center;
+        margin-bottom: rem(40px);
+    }
+}
+
+.comments__text {
+    display: block;
+    font-family: "Ubuntu";
+    font-size: rem(14px);
+    line-height: rem(24px);
+    color: #fff;
+    font-weight: lighter;
+    margin: rem(15px) 0 rem(50px) 0;
+    @include tablets {
+        text-align: center;
+        margin: 0;
+    }
+    @include phones {
+        display: none;
+    }
+}
+
+.comments__cont {
+    .button, .button__adaptive {
+        background-color: $black;
+        &:hover {
+            background-color: #1f2122;
+            transition: 0.5s;
+        }
+    }
+}
+
+.comments__cont {
+    .button__adaptive {
+        display: none;
+        @include phones {
+            display: inherit;
+        }
+    }
+}
+
+.comments__cont {
+    .button {
+        max-width: rem(110px);
+        @include phones {
+            display: none;
+        }
+    }
+}

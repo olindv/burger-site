@@ -1,0 +1,21 @@
+@function rem($px) {
+    @return $px / 16px + 0rem;
+}
+
+@mixin tablets {
+    @media (max-width: $tablets) {
+        @content;
+    }
+}
+
+@mixin phones {
+    @media (max-width: $phones) {
+        @content;
+    }
+}
+
+// @media screen and (max-width: 769px) {
+//     .slider__consist-hover--active {
+//         display: flex;
+//     }
+// }

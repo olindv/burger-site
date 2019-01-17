@@ -1,0 +1,76 @@
+.hero {
+    background: url(../img/first-bg.jpg) center center no-repeat;
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+}
+
+
+.hero__uniq{
+    font-family: "Lifehack";
+    font-size: rem(65px);
+    line-height: rem(60px);
+    color: #fff;
+    @include tablets {
+        font-size: rem(54px);
+    }
+    @include phones {
+        font-size: rem(40px);
+    }
+}
+
+
+.hero__container {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding-bottom: 15%;
+    @include tablets {
+        align-items: center;
+    }
+}
+
+.hero__content {
+    display: flex;
+    align-items: center;
+    @include tablets {
+        flex-direction: column;
+        padding: 0 12%;
+        text-align: center;
+    }
+
+    @include phones {
+        padding: 0 5%;
+    }
+}
+
+.hero__image,
+.hero__text {
+    width: 50%;
+
+    @include tablets {
+        width: 100%;
+    }
+    @include phones {
+        width: 67%;
+    }
+}
+
+.hero__pic {
+    width: 100%;
+}
+.hero__text {
+    margin-left: rem(20px);
+    .title {
+        text-align: left;
+        @include tablets {
+            margin: 0;
+            font-size: rem(63px);
+        }
+        @include phones {
+            text-align: center;
+            font-size: rem(45px);
+        }
+    }
+}

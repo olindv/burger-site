@@ -1,0 +1,148 @@
+.team {
+    background: url(../img/fourth-bg.jpg) center center no-repeat;
+    background-size: cover;
+    position: relative;
+}
+
+.team__stuff {
+    position: absolute;
+    right: 0;
+    left: 50%;
+    top: 0;
+    bottom: 0;
+    background-color: #2f3234;
+    opacity: 0.929;
+    display: flex;
+    justify-content: center;
+
+    @include tablets {
+        left: 0;
+        text-align: center;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+}
+
+.team__container {
+    min-width: rem(348px);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+.team__accordeon {
+    display: flex;
+    flex-direction: column;
+    width: rem(348px);
+}
+
+.team__order {
+    padding-left: rem(15px);
+    @include tablets{
+        padding: 0;
+    }
+}
+
+.team__elem {
+    margin-bottom: rem(25px);
+}
+
+.team__elem--active {
+    .team__description {
+        overflow: visible;
+        height: 100%;
+    }
+    .team__name {
+        color: $yellow;
+        &::before{
+            transform: rotate(180deg);
+            transform-origin: 0 0;
+        }
+    }
+}
+
+.team__link {
+    text-decoration: none;
+    position: relative
+}
+.team__name {
+    font-family: "Gagalin";
+    font-size: rem(14px);
+    line-height: rem(28px);
+    color: #fff;
+    margin-bottom: rem(10px);
+    @include tablets {
+        display: inline-flex;
+        font-size: rem(25px);
+        line-height: rem(29px);
+    }
+
+    &::before{
+        content: "";
+        display: block;
+        height: 0;
+        width: 0;
+        border: rem(3px) solid transparent;
+        border-top: rem(4px) solid $yellow;
+        position: absolute;
+        left: rem(-16px);
+        top: rem(10px);
+        @include tablets {
+            border: rem(5px) solid transparent;
+            border-top: rem(6px) solid $yellow;
+            transform: translate(-50%,-50%);
+
+        }
+        
+    }
+}
+
+.team__description {
+    display: flex;
+    height: 0;
+    overflow: hidden;
+    @include tablets {
+        flex-direction: column;
+        align-items: center;
+    }
+}
+
+.team__photo {
+    border-radius: 50%;
+    overflow: hidden;
+    width: rem(100px);
+    height: rem(100px);
+    position: relative;
+    margin-right: rem(20px);
+    @include tablets {
+        margin: rem(8px) 0 rem(20px) 0;
+    }
+}
+
+.team__picture {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.team__overview {
+    font-family: "Ubuntu";
+    font-size: rem(14px);
+    color: #fff;
+    line-height: rem(24px);
+    width: 63%;
+    @include tablets {
+        width: 100%;
+    }
+}
+.team__job {
+    font-weight: bold;
+    margin-bottom: rem(5px);
+}
+
+.team__propperty {
+    font-weight: lighter;
+}
+  

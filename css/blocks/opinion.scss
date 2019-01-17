@@ -1,0 +1,93 @@
+.opinion-lay {
+    // visibility: hidden;
+    background-color: #fff;
+    border-radius: rem(5px);
+    width: rem(460px);
+    height: rem(254px);
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    // display: flex;
+    display: none;
+}
+.opinion__wrap {
+    display: flex;
+    margin: auto;
+    // align-items: center;
+    justify-content: center;
+    width: rem(422px);
+    // height: rem(200px);
+}
+.opinion__name {
+    font-family: 'Gagalin';
+    font-size: rem(14px);
+    line-height: rem(28px);
+    color: $black;
+}
+
+.opinion__rec {
+    font-family: 'Ubuntu';
+    font-weight: lighter;
+    font-size: rem(14px);
+    line-height: rem(24px);
+    color: $black;
+}
+
+.opinion__esc {
+    position: relative;
+    display: flex;
+    width: rem(20px);
+    height: rem(20px);
+    @include tablets {
+        // display: flex;
+        // margin-top: rem(15px);
+        // display: flex;
+        // flex-direction: column;
+        // width: rem(20px);
+        // height: rem(20px);
+        justify-content: space-between;
+        z-index: 2;
+        top: rem(11px);
+    }
+    @include phones {
+        width: rem(30px);
+        height: rem(25px);
+        z-index: 3;
+        // margin-top: rem(30px);
+        top: rem(11px);
+        
+    }
+    span {
+        // width: 100%;
+        height: rem(3px);
+        background: $orange;
+        opacity: 1;
+        border-radius: rem(3px);
+        top: rem(10px);
+        @include tablets {
+            top: rem(7px);
+        }
+        @include phones {
+            height: rem(5px);
+            top: rem(7px);
+        }
+    }
+    
+}
+
+.opinion__esc-box {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    z-index: 2;
+    color: red;
+    &:nth-child(1) {
+        transform: rotate(45deg);
+    }
+    &:nth-child(2) {
+        transform: rotate(-45deg);
+    }
+}

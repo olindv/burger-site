@@ -1,0 +1,87 @@
+.footer {
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    background:url(../img/footer.jpg);
+    background-size: cover;
+    z-index: 1;
+}
+
+.contacts, .social {
+    width: 50%;
+}
+
+.contacts {
+    font-family: "Ubuntu";
+    font-weight: lighter;
+    font-size: rem(14px);
+    line-height: rem(24px);
+    color: #fff;
+    margin-top: rem(10px);
+    margin-bottom: rem(10px);
+    @include tablets {
+        padding-left: rem(20px);
+        // margin-top: rem(10px);
+        // margin-bottom: rem(10px);
+    }
+    @include phones {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        padding-left: 0;
+        margin-bottom: 0;
+        // margin-top: rem(10px);
+    }
+}
+
+.contacts__phone {
+    text-decoration: none;
+    color: $orange;
+    font-weight: bold;
+    display: flex;
+    align-items: center;
+}
+
+.contacts__icon {
+    width: rem(12px);
+    height: rem(12px);
+    margin-right: rem(9px);
+}
+
+.social {
+    display: flex;
+    justify-content: flex-end;
+    @include tablets {
+        padding-right: rem(20px);
+    }
+    @include phones {
+        padding-right: 0;
+        justify-content: center;
+        margin-top: rem(10px);
+        margin-bottom: rem(10px);
+    }
+}
+.social__list {
+    display: flex;
+}
+
+.social__link {
+    margin-right: rem(17px);
+}
+.social__vk,
+.social__fb,
+.social__instagram,
+.social__twitter {
+    width: rem(20px);
+    height: rem(20px);
+    opacity: 0.3;
+    cursor: pointer;
+    &:hover {
+        opacity: 1;
+    }
+    &:last-child {
+        margin-right: 0;
+    }
+}

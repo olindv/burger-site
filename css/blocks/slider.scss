@@ -1,0 +1,413 @@
+.slider {
+    background-image: linear-gradient( rgb(249,180,59) 0%, rgb(235,140,56) 48%, rgb(249,180,59) 74%);
+    display: flex;
+}
+.slider__left,
+.slider__right{
+    width: 50%;
+    @include phones {
+        width: 80%;
+    }
+}
+.slider__left {
+    position: relative;
+    display: flex;
+    align-items: center;
+    @include tablets {
+        margin-bottom: rem(10px);
+    }
+}
+
+.slider__container {
+    position: relative;
+    // width: 50%;
+    // overflow: hidden;
+    display: flex;
+    width: 100%;
+    .slider__container-pic {
+        width: 100%;
+    }
+}
+
+.slider__wrapper {
+    display: flex;
+}
+
+.slider__box {
+    position: relative;
+    // height: 231px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    padding-top: rem(95px);
+    padding-bottom: rem(80px);
+    // overflow: hidden;
+    @include tablets {
+        padding-bottom: 0;
+        padding-top: rem(70px);
+    }
+}
+.slider__img {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    z-index: -1;
+    width: 100%;
+    
+}
+.slider__img--active{
+    z-index: 1;
+    position: relative;
+}
+
+    
+
+.slider__pic {
+    width: 100%;
+    display: block;
+    height: 100%;
+}
+
+.slider__consist,
+.slider__calory {
+    position: absolute;
+    font-family: 'Gagalin';
+    font-size: rem(14px);
+    color: #fff;
+    width: rem(90px);
+    height: rem(90px);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    z-index: 1;
+    @include tablets {
+        width: rem(70px);
+        height: rem(70px);
+    }
+}
+
+.slider__consist {
+    border-radius: rem(5px);
+    background-color: #f08c33;
+    cursor: pointer;
+    bottom: 100%;
+    @media (min-width: 769px) {
+        &:hover {
+            background-color: $orange;
+            .slider__consist-hover {
+                display: block;
+            }
+        }
+    }
+}
+
+
+.slider__calory {
+    opacity: 0.5;
+    top: 100%;
+    @include tablets {
+        top: unset;
+        bottom: 100%;
+        right: 0;
+    }
+}
+
+.slider__consist-text,
+.slider__calory-text {
+    text-align: center;
+    @include tablets {
+        font-size: rem(12px);
+    }
+}
+
+.slider__cons-burger {
+    width: rem(48px);
+    height: rem(55px);
+    @include tablets {
+        width: rem(35px);
+        height: rem(42px);
+    }
+}
+
+.slider__calory-icon{
+    height: rem(70px);
+    width: rem(60px);
+    @include tablets {
+        width: rem(47px);
+        height: rem(150px);
+    }
+}
+
+.slider__calory-number {
+    position: absolute;
+    font-size: rem(20px);
+    color: #fff;
+    z-index: 1;
+    @include tablets {
+        font-size: rem(16px);
+    }
+}
+
+.slider__right{
+    @include tablets {
+        width: 71%;
+    }
+
+    .title--color-white {
+        padding: 0;
+        margin: 0;
+        line-height: rem(64px);
+        margin-bottom: rem(40px);
+        @include tablets {
+            margin-bottom: 0;
+            text-align: center;
+            font-size: rem(64px);
+        }
+        @include phones {
+            margin-bottom: 0;
+            line-height: rem(55px);
+        }
+    }
+}
+
+.slider__review {
+    font-family: 'Ubuntu';
+    font-weight: lighter;
+    font-size: rem(14px);
+    line-height: rem(24px);
+    color: #fff;
+    margin-bottom: rem(30px);
+    @include tablets {
+        text-align: center;
+        font-size: rem(12px);
+        margin-bottom: rem(15px);
+        margin-top: rem(15px);
+    }
+    @include phones {
+        margin-bottom: 0;
+        line-height: rem(17px);
+    }
+}
+
+.slider__elem {
+    display: flex;
+    align-items: flex-end;
+    @include tablets {
+        justify-content: center;
+    }
+    @include phones{
+        justify-content: center;
+    }
+}
+
+.slider__price,
+.slider__price-ruble {
+    font-family: 'Gagalin';
+    color: $orange;
+    display: block;
+}
+.slider__price {
+    font-size: rem(72px);
+    @include tablets {
+        font-size: rem(62px);
+    }
+    
+}
+.slider__price-ruble{
+    font-size: rem(30px);
+    margin-right: rem(30px);
+    padding-bottom: rem(10px);
+    @include tablets {
+        font-size: rem(20px);
+    }
+}
+
+.slider__consist-hover {
+    position: absolute;
+    top: 0;
+    left: rem(90px);
+    border-radius: rem(5px);
+    background-color:#fff;
+    opacity: 0.902;
+    width: rem(270px);
+    height: rem(332px);
+    display: none;
+    
+    @include tablets {
+        left: rem(70px);
+        height: rem(270px);
+        width: rem(220px);
+        // display: flex;
+        // display: none;
+    }
+    @include phones {
+        width: 65vw;
+        height: rem(390px);
+        z-index: 2;
+        // display: none;
+        // display: flex;
+    }
+}
+
+.slider__consist-hover--active {
+    @include tablets {
+        display: flex;
+    }
+    @include phones {
+        display: flex;
+    }
+}
+
+.slider__order {
+    margin: rem(20px);
+    color: $black;
+    @include tablets {
+        margin: rem(15px);
+        flex: 0.9;
+    }
+    @include phones {
+        margin: auto rem(10px);
+    }
+}
+
+.slider__order-elem {
+   
+    display: flex;
+    margin-bottom: rem(10px);
+    @include tablets {
+        margin-bottom: 0;
+    }
+    @include phones {
+        margin-bottom:  rem(20px);
+    }
+    &:last-child {
+        margin-bottom: 0;
+    }
+    
+}
+
+.slider__list {
+    display: flex;
+    margin-bottom: rem(10px);
+    width: 100%;
+    position: absolute;
+    left: 0;
+    // overflow: hidden;
+    @include tablets {
+        margin-bottom: 0;
+    }
+    @include phones {
+        margin-bottom:  rem(20px);
+    }
+}
+
+.slider__item {
+    display: flex;
+    min-width: 100%;
+    @include tablets {
+        flex-direction: column;
+        // justify-content: center;
+        align-items: center;
+    }
+}
+
+.slider__cart {
+    width: rem(45px);
+    height: rem(40px);
+    margin-right: rem(24px);
+    @include tablets {
+        margin-right: rem(15px);
+    }
+    @include phones {
+        margin-right: rem(30px);
+    }
+}
+
+.slider__staff {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    align-items: center;
+    font-family: 'Ubuntu';
+    font-weight: medium;
+    font-size: rem(14px);
+    @include tablets {
+        font-size: rem(11px);
+    }
+    @include phones {
+        font-size: rem(14px);
+        width: 70%;
+    }
+}
+
+.slider__int {
+    font-weight: lighter;
+}
+
+
+.slider__esc {
+    position: relative;
+    @include tablets {
+        display: flex;
+        // margin-top: rem(15px);
+        display: flex;
+        flex-direction: column;
+        width: rem(20px);
+        height: rem(20px);
+        justify-content: space-between;
+        z-index: 2;
+        top: rem(11px);
+    }
+    @include phones {
+        width: rem(30px);
+        height: rem(30px);
+        z-index: 3;
+        // margin-top: rem(30px);
+        top: rem(11px);
+        right: 0;
+        
+    }
+    span {
+        // width: 100%;
+        height: rem(3px);
+        background: $orange;
+        opacity: 1;
+        border-radius: rem(3px);
+        @include tablets {
+            top: rem(7px);
+        }
+        @include phones {
+            height: rem(4px);
+            top: rem(9px);
+        }
+    }
+    
+}
+
+.slider__esc-box {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    z-index: 2;
+    &:nth-child(1) {
+        transform: rotate(45deg);
+    }
+    &:nth-child(2) {
+        transform: rotate(-45deg);
+    }
+}
+
+
+// .slider__consist:hover {
+//     .slider__consist-hover {
+//         display: block;
+//     }
+// }
+
+
+  
