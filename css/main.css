@@ -715,10 +715,10 @@ body {
   align-items: center; }
   @media (max-width: 768px) {
     .best {
-      background-image: url(../../img/adaptive/bg-tabl.jpg); } }
+      background-image: url(../img/adaptive/bg-tabl.jpg); } }
   @media (max-width: 480px) {
     .best {
-      background-image: url(../../img/adaptive/bg-phone.jpg); } }
+      background-image: url(../img/adaptive/bg-phone.jpg); } }
 
 .best__quality {
   display: -webkit-box;
