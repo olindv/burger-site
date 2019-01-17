@@ -350,37 +350,37 @@ template {
 
 @font-face {
   font-family: 'Ubuntu';
-  src: url("../../fonts/ubuntu-b-webfont.woff2") format("woff2"), url("../../fonts/ubuntu-b-webfont.woff") format("woff");
+  src: url("../fonts/ubuntu-b-webfont.woff2") format("woff2"), url("../fonts/ubuntu-b-webfont.woff") format("woff");
   font-weight: bold;
   font-style: normal; }
 
 @font-face {
   font-family: 'Ubuntu';
-  src: url("../../fonts/ubuntu-light-webfont.woff2") format("woff2"), url("../../fonts/ubuntu-light-webfont.woff") format("woff");
+  src: url("../fonts/ubuntu-light-webfont.woff2") format("woff2"), url("../fonts/ubuntu-light-webfont.woff") format("woff");
   font-weight: lighter;
   font-style: normal; }
 
 @font-face {
   font-family: 'Ubuntu';
-  src: url("../../fonts/ubuntu-medium-webfont.woff2") format("woff2"), url("../../fonts/ubuntu-medium-webfont.woff") format("woff");
+  src: url("../fonts/ubuntu-medium-webfont.woff2") format("woff2"), url("../fonts/ubuntu-medium-webfont.woff") format("woff");
   font-weight: medium;
   font-style: normal; }
 
 @font-face {
   font-family: 'Ubuntu';
-  src: url("../../fonts/ubuntu-regular-webfont.woff2") format("woff2"), url("../../fonts/ubuntu-regular-webfont.woff") format("woff");
+  src: url("../fonts/ubuntu-regular-webfont.woff2") format("woff2"), url("../fonts/ubuntu-regular-webfont.woff") format("woff");
   font-weight: normal;
   font-style: normal; }
 
 @font-face {
   font-family: 'Gagalin';
-  src: url("../../fonts/gagalin-regular-webfont.woff2") format("woff2"), url("../../fonts/gagalin-regular-webfont.woff") format("woff");
+  src: url("../fonts/gagalin-regular-webfont.woff2") format("woff2"), url("../fonts/gagalin-regular-webfont.woff") format("woff");
   font-weight: normal;
   font-style: normal; }
 
 @font-face {
   font-family: 'Lifehack';
-  src: url("../../fonts/lifehack_medium-webfont.woff2") format("woff2"), url("../../fonts/lifehack_medium-webfont.woff") format("woff");
+  src: url("../fonts/lifehack_medium-webfont.woff2") format("woff2"), url("../fonts/lifehack_medium-webfont.woff") format("woff");
   font-weight: medium;
   font-style: normal; }
 
@@ -462,7 +462,7 @@ body {
         flex-direction: column; } }
 
 .hero {
-  background: url(../../img/first-bg.jpg) center center no-repeat;
+  background: url(../img/first-bg.jpg) center center no-repeat;
   background-size: cover;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -991,7 +991,7 @@ body {
   border-color: #fff; }
 
 .team {
-  background: url(../../img/fourth-bg.jpg) center center no-repeat;
+  background: url(../img/fourth-bg.jpg) center center no-repeat;
   background-size: cover;
   position: relative; }
 
@@ -1161,7 +1161,7 @@ body {
   font-weight: lighter; }
 
 .menu {
-  background: url(../../img/five-bg.jpg) center center no-repeat;
+  background: url(../img/five-bg.jpg) center center no-repeat;
   background-size: cover;
   position: relative; }
 
@@ -1263,19 +1263,19 @@ body {
     padding-top: 0; }
 
 .menu__list:first-child .menu__link {
-  background: url(../../img/accord1.jpg) center center no-repeat;
+  background: url(../img/accord1.jpg) center center no-repeat;
   background-size: cover; }
 
 .menu__list:nth-child(2) .menu__link {
-  background: url(../../img/accord2.jpg) center center no-repeat;
+  background: url(../img/accord2.jpg) center center no-repeat;
   background-size: cover; }
 
 .menu__list:last-child .menu__link {
-  background: url(../../img/accord3.jpg) center center no-repeat;
+  background: url(../img/accord3.jpg) center center no-repeat;
   background-size: cover; }
 
 .order {
-  background: url(../../img/form-bg.jpg) center center no-repeat;
+  background: url(../img/form-bg.jpg) center center no-repeat;
   background-size: cover;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -1528,7 +1528,7 @@ input[type="text"] {
   left: 0;
   bottom: 0;
   right: 0;
-  background: url(../../img/footer.jpg);
+  background: url(../img/footer.jpg);
   background-size: cover;
   z-index: 1; }
 
@@ -2386,7 +2386,7 @@ body.disabled-onepage-scroll, .disabled-onepage-scroll .onepage-wrapper, html {
   position: inherit; }
 
 .video {
-  background: url(../../img/BG.jpg) center center no-repeat;
+  background: url(../img/BG.jpg) center center no-repeat;
   background-size: cover;
   display: -webkit-box;
   display: -ms-flexbox;
